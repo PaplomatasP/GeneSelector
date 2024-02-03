@@ -179,6 +179,8 @@ GeneSelector <- function(data, Generations,min_genes = 200, max_genes = 2500,
   return( list(G_S_genes=G_S_genes ,  data_GA_filtered= data_GA_filtered,Labels=Labels))
 }
 
+
+#### EXAMPLE
 # Store the start time
 start_time <- Sys.time()
 

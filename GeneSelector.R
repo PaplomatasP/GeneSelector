@@ -1,7 +1,7 @@
 library(Seurat)
 library(GA)  # Genetic algorithm 
 
-
+# Preprocess before run the pipeline
 OptimizeExpressionMatrix <- function(data, min_genes = 200, max_genes = 2500) {
   library(Seurat)
   obj=data
@@ -24,6 +24,7 @@ OptimizeExpressionMatrix <- function(data, min_genes = 200, max_genes = 2500) {
 
 
 
+# Function run the DGEA analysis
 
 wilcoxFun <- function(data, Labels) {
   
@@ -76,6 +77,8 @@ wilcoxFun <- function(data, Labels) {
   return(results_Seurat)
 }
 
+# Function make the normalization
+
 normalize_score <- function(score, score_min, score_max) {
   # # Check if the range of values is zero
   if (score_max == score_min) {
@@ -87,6 +90,7 @@ normalize_score <- function(score, score_min, score_max) {
   return(normalized_score)
 }
 
+# Costum function for initialization the population of the GA
 custom_initialization <- function(object, ...) {
   nBits <- object@nBits  # Number of genes
   popSize <- object@popSize  # Population size
@@ -97,6 +101,25 @@ custom_initialization <- function(object, ...) {
   return(population)
 }
 
+
+# # Genetic_similarity is a function that performs genetic algorithm-based feature selection
+# on single-cell RNA sequencing (scRNA-seq) data to identify genes that exhibit relevant
+# biological differences between groups defined by 'Labels'.
+# 
+# Input:
+# - data: A matrix or dataframe containing scRNA-seq data.
+# - Labels: A vector specifying group labels or conditions for the data.
+# - popSize: Population size for the genetic algorithm.
+# - Generations: The number of generations (iterations) for the genetic algorithm.
+# 
+# The function first normalizes the input data and then evaluates the fitness of gene subsets.
+# Fitness is determined based on a combination of statistical measures including Wilcoxon test results
+# (p-values and log fold change), gene variance, and normalization scores.
+# 
+# The genetic algorithm seeks to maximize fitness, ultimately selecting a subset of genes that
+# are likely to be biologically relevant for distinguishing between the defined groups.
+# 
+# The function returns a list of selected genes and their fitness scores.
 
 
 Genetic_similarity <- function(data, Labels,popSize,Generations) {
@@ -158,6 +181,25 @@ Genetic_similarity <- function(data, Labels,popSize,Generations) {
   
   return(top_genes)
 }
+
+# GeneSelector is a function for identifying and selecting genes with high biological significance
+# from single-cell RNA sequencing (scRNA-seq) data using a genetic algorithm-based approach.
+# 
+# Input:
+# - data: A matrix or dataframe containing scRNA-seq data.
+# - Generations: The number of generations (iterations) for the genetic algorithm.
+# - min_genes: The minimum number of genes to consider in the selection process.
+# - max_genes: The maximum number of genes to consider in the selection process.
+# - popSize: Population size for the genetic algorithm.
+# - Labels: A vector specifying group labels or conditions for the data.
+# 
+# The function first optimizes the input data by adjusting the number of genes to fall within the
+# specified range (min_genes to max_genes). It then employs a genetic algorithm to evaluate the
+# fitness of gene subsets, aiming to maximize biological relevance for distinguishing between the
+# defined groups represented by 'Labels'.
+# 
+# The selected genes are returned as 'G_S_genes', and the filtered scRNA-seq data containing
+# only these genes is returned as 'data_GA_filtered'.
 
 GeneSelector <- function(data, Generations,min_genes = 200, max_genes = 2500,
                         popSize,Labels) {

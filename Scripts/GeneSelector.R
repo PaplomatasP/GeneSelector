@@ -43,7 +43,7 @@ start_time <- Sys.time()
 
 # Use the GeneSelector function on your example data
 # Adjust n_GA, n_PCA, and n_NMF based on how many genes you want to keep at each step
-selected_genes <- GeneSelector(GBM_Dataset,Generations=400, min_genes = 200, max_genes = 2500,
+selected_genes <- GeneSelector(GBM_Dataset,Generations=500, min_genes = 200, max_genes = 2500,
                                popSize=400, Labels=GBM_Labels)
 
 # Store the end time

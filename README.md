@@ -35,7 +35,7 @@ Contributions to GeneSelector are welcome! If you'd like to contribute to the pr
 
 ## License
 
-GeneSelector is licensed under the [MIT License](LICENSE).
+GeneSelector is licensed under the GNU AFFERO GENERAL PUBLIC LICENSE
 
 ## Acknowledgments
 

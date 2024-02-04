@@ -29,14 +29,9 @@ This study's results highlight the effectiveness of the GeneSelector framework i
 - Integration of DEGs and HVGs within a GA enriches feature selection, yielding robust candidate biomarkers.
 - The GA's performance trajectory (Figure 3) demonstrates its adeptness in narrowing down biologically pertinent features.
 
-## Contributing
-
-Contributions to GeneSelector are welcome! If you'd like to contribute to the project or report issues, please refer to our [Contribution Guidelines](CONTRIBUTING.md).
 
 ## License
 
 GeneSelector is licensed under the GNU AFFERO GENERAL PUBLIC LICENSE
 
-## Acknowledgments
 
-We would like to thank all contributors to the GeneSelector project for their valuable input and support.

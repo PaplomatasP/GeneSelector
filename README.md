@@ -44,10 +44,3 @@ This study's results highlight the effectiveness of the GeneSelector framework i
    ![Figure 5](https://github.com/PaplomatasP/GeneSelector/blob/Master/Plots/GO.png)
 
 
-
-
-## License
-
-GeneSelector is licensed under the GNU AFFERO GENERAL PUBLIC LICENSE
-
-

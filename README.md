@@ -25,7 +25,6 @@ This study's results highlight the effectiveness of the GeneSelector framework i
 ### Key Observations
 
 1. Clear demarcation between the two GBM subtypes indicates the promise of gene-centric analysis.
-
    ![Fig. 1](https://github.com/PaplomatasP/GeneSelector/blob/Master/Plots/UMAP.png)
       <br>
       
@@ -34,15 +33,15 @@ This study's results highlight the effectiveness of the GeneSelector framework i
      <br>
 5. Integration of DEGs and HVGs within a GA enriches feature selection, yielding robust candidate biomarkers.
    ![Figure 3](https://github.com/PaplomatasP/GeneSelector/blob/Master/Plots/iter_plot.png)
-   <br>
+     <br>
    
 7. The GA's performance trajectory demonstrates its adeptness in narrowing down biologically pertinent features.
-![Figure 4](https://github.com/PaplomatasP/GeneSelector/blob/Master/Plots/hsa05200..png)
- <br>
+   ![Figure 4](https://github.com/PaplomatasP/GeneSelector/blob/Master/Plots/hsa05200..png)
+    <br>
 
 9. This figure 5 illustrates the outcomes of a comprehensive enrichment analysis using Gene Ontologies (GO) for the set of 92 genes obtained through a genetic optimization-based pipeline.
 <br>
-![Figure 5](https://github.com/PaplomatasP/GeneSelector/blob/Master/Plots/GO.png)
+   ![Figure 5](https://github.com/PaplomatasP/GeneSelector/blob/Master/Plots/GO.png)
 
 
 

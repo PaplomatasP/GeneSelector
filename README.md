@@ -40,7 +40,7 @@ This study's results highlight the effectiveness of the GeneSelector framework i
     <br>
 
 9. Figure 5 illustrates the outcomes of a comprehensive enrichment analysis using Gene Ontologies (GO) for the set of 92 genes obtained through a genetic optimization-based pipeline.
-<br>
+
    ![Figure 5](https://github.com/PaplomatasP/GeneSelector/blob/Master/Plots/GO.png)
 
 

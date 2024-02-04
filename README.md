@@ -12,7 +12,7 @@ The dataset in its original form consists of a total of 8,346 glioblastoma prone
 
 ## Usage
 
-GeneSelector is a powerful tool for researchers seeking to uncover genes that play a crucial role in cellular processes and disease mechanisms. With its GA-based feature selection approach, GeneSelector empowers scientists to make informed decisions and advance our understanding of gene expression dynamics in single-cell RNA sequencing studies.
+GeneSelector is a  tool for researchers seeking to uncover genes that play a crucial role in cellular processes and disease mechanisms. With its GA-based feature selection approach, GeneSelector empowers scientists to make informed decisions and advance our understanding of gene expression dynamics in single-cell RNA sequencing studies.
 
 ### Case Study: Glioblastoma Multiforme (GBM)
 

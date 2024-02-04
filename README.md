@@ -24,10 +24,11 @@ This study's results highlight the effectiveness of the GeneSelector framework i
 
 ### Key Observations
 
-- Clear demarcation between the two GBM subtypes (see Fig. 1) indicates the promise of gene-centric analysis.
-- Limited overlap between DEGs and HVGs (Figure 2) emphasizes the need for a dual-method approach.
-- Integration of DEGs and HVGs within a GA enriches feature selection, yielding robust candidate biomarkers.
-- The GA's performance trajectory (Figure 3) demonstrates its adeptness in narrowing down biologically pertinent features.
+1. Clear demarcation between the two GBM subtypes (see ![Fig. 1](https://github.com/PaplomatasP/GeneSelector/blob/Master/Plots/UMAP.png)) indicates the promise of gene-centric analysis.
+2. Limited overlap between DEGs and HVGs (![Figure 2](https://github.com/PaplomatasP/GeneSelector/blob/Master/Plots/Overlap_HVG_DEG_plot.png)) emphasizes the need for a dual-method approach.
+3. Integration of DEGs and HVGs within a GA enriches feature selection (![Figure 3](https://github.com/PaplomatasP/GeneSelector/blob/Master/Plots/iter_plot.png)), yielding robust candidate biomarkers.
+4. The GA's performance trajectory (![Figure 4](https://github.com/PaplomatasP/GeneSelector/blob/Master/Plots/hsa05200..png)) demonstrates its adeptness in narrowing down biologically pertinent features.
+
 
 
 ## License

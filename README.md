@@ -6,6 +6,10 @@ GeneSelector is a sophisticated tool designed to enhance the exploration of biom
 
 GeneSelector simplifies the complex task of biomarker discovery in scRNA-seq data. By merging DEGs, which signify genes with differential expression across different conditions or cell types, and HVGs, which highlight genes with substantial variability within a dataset, GeneSelector ensures a comprehensive analysis of gene expression patterns. This integration allows researchers to pinpoint genes that not only exhibit significant biological relevance but also demonstrate a high degree of variability, making them prime candidates for further investigation as potential biomarkers.
 
+### Dataset Description
+
+The dataset in its original form consists of a total of 8,346 glioblastoma proneural cells and 2,632 glioblastoma mesenchymal cells, as reported by Immucan. It comprises gene expression profiles for these cells, with the last column labeled "tag" indicating their subtype classification. This "tag" column assigns cells to one of two subtypes: "glioblastoma proneural subtype" or "glioblastoma mesenchymal subtype." This dataset is crucial for analyzing and differentiating between these two glioblastoma subtypes based on gene expression data, offering insights into disease heterogeneity and potential biomarker identification.
+
 ## Usage
 
 GeneSelector is a powerful tool for researchers seeking to uncover genes that play a crucial role in cellular processes and disease mechanisms. With its GA-based feature selection approach, GeneSelector empowers scientists to make informed decisions and advance our understanding of gene expression dynamics in single-cell RNA sequencing studies.

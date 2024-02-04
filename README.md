@@ -1,4 +1,4 @@
-# GeneSelector - Advanced Biomarker Discovery Tool
+# GeneSelector - Advanced Biomarker Discovery Tool using Genetic Algorithm
 
 GeneSelector is a sophisticated tool designed to enhance the exploration of biomarkers in single-cell RNA sequencing (scRNA-seq) data. This innovative software combines two crucial aspects of biomarker discovery: Differentially Expressed Genes (DEGs) and Highly Variable Genes (HVGs) within a single framework. GeneSelector leverages the power of Genetic Algorithms (GAs) to perform feature selection, enabling the identification of genes that possess both high variance and biological significance.
 
